@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 
 [System.Serializable]
@@ -105,6 +106,15 @@ public class PlayerControls : MonoBehaviour
             {
                 Vector3 rightOffset = new Vector3(0.3f, 0.2f, 0);
                 Vector3 leftOffset = new Vector3(-0.3f, 0.2f, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+            }
+
+            Instantiate(projectile, transform.position, transform.rotation);
+            if (currentLevel >= 10)
+            {
+                Vector3 rightOffset = new Vector3(0.1f, 0.3f, 0);
+                Vector3 leftOffset = new Vector3(-0.1f, 0.3f, 0);
                 Instantiate(projectile, transform.position + rightOffset, transform.rotation);
                 Instantiate(projectile, transform.position + leftOffset, transform.rotation);
             }
