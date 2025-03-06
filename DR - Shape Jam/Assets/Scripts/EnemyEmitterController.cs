@@ -43,6 +43,10 @@ public class EnemyEmitterController : MonoBehaviour
                 Instantiate(Enemy, enemyPosition, transform.rotation);
             }
 
+            if ()
+            {
+
+            }
 
             /*****************************\
             |**** Add your code above ****|
