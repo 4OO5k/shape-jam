@@ -126,7 +126,7 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-
+    //creating a block piece
     void CreatePiece(int x, int y, int z)
     {
         // When the CreatePiece function is called, a GameObject piece is made and set to a created Cube
